@@ -30,7 +30,7 @@ class ProductTest < ActiveSupport::TestCase
     assert product.valid?
   end
 
-  test "image_url" do
+  test "image_url to test" do
     ok = %w{ fred.gif fred.jpg fred.png http://abc.com/image.jpg }
     bad = %w{ fred.doc fred.ppt fred.gif/more }
 
