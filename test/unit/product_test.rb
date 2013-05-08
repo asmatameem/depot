@@ -15,7 +15,7 @@ class ProductTest < ActiveSupport::TestCase
     assert product.errors[:image_url].any?
   end
 
-  test "Product price must be positive" do
+  test "Product price must be positive number" do
     product = Product.new({:title => "any title", :description => "random desc", :image_url => "image.jpg"})
 
     product.price = -1
